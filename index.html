@@ -42,32 +42,35 @@
         </div>
 
         <!-- screen section -->
-        <div class="bg-[#3a4764] w-full h-20 rounded-xl my-10 md:bg-[#182034]" class="screen"></div>
+        <div class="bg-[#3a4764] h-23 rounded-xl my-10 md:bg-[#182034] text-white  " >
+            <input type="number" placeholder="Hello here!"  id="screen" class="w-full text-right  h-35">
+        </div>
 
         <!-- button section -->
-        <div class="bg-gray-800 grid grid-cols-4 gap-y-4 gap-x-6 text-3xl font-bold p-5 sm:gap-x-20 md:gap-x-10 rounded-xl">
-            
-            <button data-val="7" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">7</button>
-            <button data-val="8" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">8</button>
-            <button data-val="9" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">9</button>
-            <button id="delBtn" class="bg-[#637097] w-13 h-15 text-xl shadow-lg cursor-pointer rounded-md uppercase md:w-13 ">Del</button>
-            <button data-val="4" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">4</button>
-            <button data-val="5" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">5</button>
-            <button data-val="6" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">6</button>
-            <button data-val="+" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">+</button>
-            <button data-val="1" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">1</button>
-            <button data-val="2" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">2</button>
-            <button data-val="3" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">3</button>
-            <button data-val="-" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">-</button>
-            <button data-val="." class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">.</button>
-            <button data-val="0" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">0</button>
-            <button data-val="/" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">/</button>
-            <button data-val="*" class="bg-white w-13 h-15 shadow-lg cursor-pointer rounded-md md:w-13">x</button>
-            <button id="resetBtn" class="bg-[#637097] col-span-2 h-15 text-xl shadow-lg cursor-pointer uppercase rounded-md">reset</button>
-            <button id="equalBtn" class="bg-red-500 col-span-2 h-15 text-center rounded-md">=</button>
+        <div class="bg-gray-800 grid grid-cols-4 gap-y-4 gap-x-6 text-3xl text-[#444b5a] font-bold p-5 sm:gap-x-20 md:gap-x-10 rounded-xl ">
+
+            <button data-val="7" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">7</button>
+            <button data-val="8" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">8</button>
+            <button data-val="9" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">9</button>
+            <button id="delBtn" class="bg-[#637097] w-13 h-15 text-xl text-[#f4f4f4] cursor-pointer rounded-md  border-b-5 border-gray-600 uppercase md:w-13 ">Del</button>
+            <button data-val="4" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">4</button>
+            <button data-val="5" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">5</button>
+            <button data-val="6" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">6</button>
+            <button data-val="+" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">+</button>
+            <button data-val="1" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">1</button>
+            <button data-val="2" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">2</button>
+            <button data-val="3" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">3</button>
+            <button data-val="-" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">-</button>
+            <button data-val="." class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">.</button>
+            <button data-val="0" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">0</button>
+            <button data-val="/" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">/</button>
+            <button data-val="*" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13">x</button>
+            <button id="resetBtn" class="bg-[#637097] col-span-2 h-15 text-xl text-[#f4f4f4] cursor-pointer  border-b-5 border-gray-600 uppercase rounded-md">reset</button>
+            <button id="equalBtn" class="bg-red-500 col-span-2 h-15 text-center text-[#f4f4f4] cursor-pointer rounded-md border-b-5 border-red-400 ">=</button>
 
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
