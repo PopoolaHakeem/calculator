@@ -13,10 +13,10 @@
     </style>
 
 </head>
-<body class="bg-gray-700">
-    <div class="bg-gray-700 w-full h-screen py-5 px-5 sm:w-9/12 md:w-6/12 lg:w-6/12 mx-auto">
+<body class="bg-[#637097]">
+    <div class="bg-gray- w-full h-auto pt-5 pb-10 px-10 sm:w-9/12 md:w-6/12 lg:w-6/12 mx-auto">
 
-        <!-- header theme -->
+        <!-- header and theme -->
         <div class="w-full flex justify-between items-end  text-white">
             <h3 class="font-bold text-2xl md:text-3xl mx-1">calc</h3>
 
@@ -29,33 +29,47 @@
                         <span>3</span>
                     </label>
 
-                    <div class="flex justify-center items-center text-[1px] space-x-0.5">
+                    <div class="flex justify-center items-center text-[1px] space-x-0.5 rounded-xl bg-gray-800 h-6 px-2">
                         <label for="dark" class="hidden">dark theme</label>
-                        <input type="radio" id="dark">
+                        <input type="radio" id="dark" class="w-[16px] h-[16px]">
                         <label for="light" class="hidden">light theme</label>
-                        <input type="radio" id="light">
+                        <input type="radio" id="light" class="w-[16px] h-[16px]">
                         <label for="brown" class="hidden">brown theme class="hidden"</label>
-                        <input type="radio" id="brown">
+                        <input type="radio" id="brown" class="w-[16px] h-[16px]">
                     </div>
                 </form>
             </div>
         </div>
 
-        <!-- output phase -->
-        <div class="bg-gray-800 w-full h-20 rounded-xl my-10"></div>
+        <!-- screen section -->
+        <div class="bg-[#3a4764] w-full h-20 rounded-xl my-10 md:bg-[#182034]" class="screen"></div>
+
+        <!-- button section -->
+        <div class="bg-gray-800 grid grid-cols-4 gap-y-4 gap-x-10 text-3xl font-bold p-5 md:gap-x-5 rounded-xl">
+            <button data-val="7" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">7</button>
+            <button data-val="8" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">8</button>
+            <button data-val="9" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">9</button>
+            <button id="delBtn" class="bg-[#637097] h-15 text-xl uppercase md:w-13 ">Del</button>
+            <button data-val="4" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">4</button>
+            <button data-val="5" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">5</button>
+            <button data-val="6" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">6</button>
+            <button data-val="+" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">+</button>
+            <button data-val="1" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">1</button>
+            <button data-val="2" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">2</button>
+            <button data-val="3" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">3</button>
+            <button data-val="-" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">-</button>
+            <button data-val="." class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">.</button>
+            <button data-val="0" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">0</button>
+            <button data-val="/" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">/</button>
+            <button data-val="*" class="bg-white w-15 h-15 shadow-lg cursor-pointer rounded-md md:w-13">x</button>
+            <button id="resetBtn" class="bg-[#637097] col-span-2 h-15 text-xl uppercase rounded-md">reset</button>
+            <button id="equalBtn" class="bg-red-500 col-span-2 h-15 text-center rounded-md">=</button>
 
 
 
 
-
-
-
-
-
-
-
-
-
+            
+        </div>
 
 
 
