@@ -5,15 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Calculator</title>
+    
+    <style>
+        body, html {
+            font-family: 'League Spartan', sans-serif;;
+        }
+    </style>
+
 </head>
 <body class="bg-gray-700">
     <div class="bg-gray-700 w-full h-screen py-5 px-5 sm:w-9/12 md:w-6/12 lg:w-6/12 mx-auto">
-        <div class="w-full flex justify-between items-end text-white">
-            <h3 class="font-bold text-2xl md:text-3xl">calc</h3>
 
-            <div class="flex justify-between items-center space-x-7">
+        <!-- header theme -->
+        <div class="w-full flex justify-between items-end  text-white">
+            <h3 class="font-bold text-2xl md:text-3xl mx-1">calc</h3>
+
+            <div class="flex justify-between items-end space-x-5 mx-1 text-center">
                 <p class="font-bold text-[12px] uppercase ">theme</p>
-                <p>@@@</p>
+                <form action="">
+                    <label for="theme-number" class="text-[10px] space-x-2">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </label>
+
+                    <div class="flex justify-center items-center text-[1px] space-x-0.5">
+                        <label for="dark" class="hidden">dark theme</label>
+                        <input type="radio" id="dark">
+                        <label for="light" class="hidden">light theme</label>
+                        <input type="radio" id="light">
+                        <label for="brown" class="hidden">brown theme class="hidden"</label>
+                        <input type="radio" id="brown">
+                    </div>
+                </form>
             </div>
         </div>
 
