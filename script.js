@@ -27,6 +27,6 @@ darkTheme.onclick = function() {
 }
 
 brownTheme.onclick = function() {
-    body.style.backgroundColor = "#ca8451ff"
+    body.style.backgroundColor = "#af734a"
     body.style.color = "white"
 }
