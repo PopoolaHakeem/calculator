@@ -17,13 +17,14 @@ var brownTheme = document.querySelector("#brown-theme")
 var body = document.body
 
 lightTheme.onclick = function() {
-    body.style.backgroundColor = "white"
-    body.style.color = "black"
+    body.style.backgroundColor = "#333"
+    body.style.color = "#333"
+    body.ontransitionrun = "all"
 }
 
 darkTheme.onclick = function() {
     body.style.backgroundColor = "#637097"
-    body.style.color = "red"
+    body.style.color = "white"
 }
 
 brownTheme.onclick = function() {
