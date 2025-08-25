@@ -22,5 +22,11 @@ lightTheme.onclick = function() {
 }
 
 darkTheme.onclick = function() {
-    body.style.backgroundColor = "black"
+    body.style.backgroundColor = "#637097"
+    body.style.color = "red"
+}
+
+brownTheme.onclick = function() {
+    body.style.backgroundColor = "#ca8451ff"
+    body.style.color = "white"
 }
