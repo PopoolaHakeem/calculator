@@ -17,14 +17,10 @@ var brownTheme = document.querySelector("#brown-theme")
 var body = document.body
 
 lightTheme.onclick = function() {
-    lightTheme.body.style.backgroundColor = "red"
     body.style.backgroundColor = "white"
+    body.style.color = "black"
 }
 
-
-
-menuicon.onclick = function() {
-    menuicon.style.display = 'none'
-    mobilenav.style.display = 'block'
-    cancelicon.style.display = 'block'
+darkTheme.onclick = function() {
+    body.style.backgroundColor = "black"
 }
