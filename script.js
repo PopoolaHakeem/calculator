@@ -9,23 +9,22 @@
 // }
 // calculator(33)
 
+// alert('Welcome!')
+
 var darkTheme = document.querySelector("#dark-theme")
 var lightTheme = document.querySelector("#light-theme")
 var brownTheme = document.querySelector("#brown-theme")
 var body = document.body
 
+lightTheme.onclick = function() {
+    lightTheme.body.style.backgroundColor = "red"
+    body.style.backgroundColor = "white"
+}
 
-lightTheme.onclick = () => {
-    body.classList.remove('dark-theme' , 'brown-theme')
-    body.classList.add('light-theme')
-};
 
-darkTheme.onclick = () => {
-    body.classList.remove('light-theme' , 'brown-theme')
-    body.classList.add('dark-theme')
-};
 
-brownTheme.onclick = () => {
-    body.classList.remove('dark-theme' , 'light-theme')
-    body.classList.add('brown-theme')
-};
+menuicon.onclick = function() {
+    menuicon.style.display = 'none'
+    mobilenav.style.display = 'block'
+    cancelicon.style.display = 'block'
+}
