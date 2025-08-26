@@ -28,10 +28,14 @@ lightTheme.onclick = function() {
     body.style.backgroundColor = "#fffdd0"
     document.querySelector("#header").style.color = "#373433"
     body.style.color = "#333"
+    body.style.transition = "all 0.5s ease-in-out"  
+
 }
 
 brownTheme.onclick = function() {
     body.style.backgroundColor = "#161616"
     document.querySelector("#header").style.color = "#f7f7f7ff"
     body.style.color = "white"
+    body.style.transition = "all 0.5s ease-in-out"  
+
 }
