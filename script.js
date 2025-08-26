@@ -11,13 +11,14 @@
 
 // alert('Welcome!')
 
-var darkTheme = document.querySelector("#dark-theme")
+var defaultTheme = document.querySelector("#default-theme")
 var lightTheme = document.querySelector("#light-theme")
 var brownTheme = document.querySelector("#brown-theme")
-var body = document.body
 var numberBtn = document.querySelector("#pads")
+var body = document.body
 
-darkTheme.onclick = function() {
+
+defaultTheme.onclick = function() {
     body.style.backgroundColor = "#637097"
     document.querySelector("#header").style.color = "#fff"
     body.style.transition = "all 0.5s ease-in-out"  
