@@ -37,5 +37,4 @@ brownTheme.onclick = function() {
     document.querySelector("#header").style.color = "#f7f7f7ff"
     body.style.color = "white"
     body.style.transition = "all 0.5s ease-in-out"  
-
 }
