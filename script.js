@@ -31,6 +31,6 @@ lightTheme.onclick = function() {
 
 brownTheme.onclick = function() {
     body.style.backgroundColor = "#161616"
-    document.querySelector("#header").style.color = "#ecececff"
+    document.querySelector("#header").style.color = "#f7f7f7ff"
     body.style.color = "white"
 }
