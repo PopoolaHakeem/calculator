@@ -20,7 +20,7 @@ var numberBtn = document.querySelector("#pads")
 darkTheme.onclick = function() {
     body.style.backgroundColor = "#637097"
     document.querySelector("#header").style.color = "#fff"
-    // body.style.transition = "all 0.5s ease-in-out"
+    body.style.transition = "all 0.5s ease-in-out"
     
 }
 
