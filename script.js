@@ -8,7 +8,7 @@
 // }
 // calculator(n)
 
-alert('Welcome!')
+// alert('Welcome!')
 
 var defaultTheme = document.querySelector("#default-theme")
 var lightTheme = document.querySelector("#light-theme")
