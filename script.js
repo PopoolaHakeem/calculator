@@ -36,3 +36,25 @@ brownTheme.onclick = function() {
     body.style.color = "white"
     body.style.transition = "all 0.5s ease-in-out"  
 }
+
+const buttons = document.getElementsByTagName("button")
+const screen = document.querySelector("#screen")
+let currentNumber = '';
+let previousNumber = '';
+let operator = '';
+
+buttons.array.forEach((button) => {
+    button.addEventListener('click', () => {
+        const value = button.value;
+
+        if (value >= '0' && value <= '9' || value === '.') {
+            currentNumber += value;
+            screen.innerHTML = currentNumber;
+        } else if (value === '+' || value === '-' || value === '*' || value === '/') {
+            previousNumber = currentNumber
+            currentNumber = ''
+            operator = value
+            screen.innerHTML = ''
+        }
+    })
+});
