@@ -1,15 +1,14 @@
 
-// var numbers = [one, two, three]
-
+// var numbers = [1,2,3,4,5,6,7,8,9,0]
 
 // function calculator(n) {
 //     for (let i = 0; i <= 9; i++) {
 //         console.log(i)
 //     }
 // }
-// calculator(33)
+// calculator(n)
 
-// alert('Welcome!')
+alert('Welcome!')
 
 var defaultTheme = document.querySelector("#default-theme")
 var lightTheme = document.querySelector("#light-theme")
