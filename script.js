@@ -55,6 +55,38 @@ buttons.array.forEach((button) => {
             currentNumber = ''
             operator = value
             screen.innerHTML = ''
+        } else if (value === '=') {
+            const result = calculate(previousNumber, currentNumber, operator)
+            screen.innerHTML = result
+            currentNumber = result.tostring()
+            previousNumber = ''
+            operator = ''
+        } else if (value === 'c') {
+            currentNumber = ''
+            previousNumber = ''
+            operator = ''
+            screen.innerHTML = ''
         }
-    })
+    });
 });
+
+function calculate(previousNumber, currentNumber,operator) {
+    const num1 = parseFloat(previousNumber)
+    const num2 = parseFloat(currentNumber)
+
+    switch (operator) {
+        case '+':
+            return (num1 + num2);
+        case '-':
+            return (num1 - num2)
+        case '*':
+            return (num1 * num2)
+        case '/':
+            if (num2 === 0) {
+                return 'Error'
+            }
+            return num1 / num2
+        default:
+        return ''
+    }
+}
