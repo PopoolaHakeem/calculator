@@ -13,7 +13,7 @@
 var defaultTheme = document.querySelector("#default-theme")
 var lightTheme = document.querySelector("#light-theme")
 var brownTheme = document.querySelector("#brown-theme")
-var numberBtn = document.querySelector("#pads")
+// var numberBtn = document.querySelector("#pads")
 var body = document.body
 
 
@@ -37,56 +37,17 @@ brownTheme.onclick = function() {
     body.style.transition = "all 0.5s ease-in-out"  
 }
 
-const buttons = document.getElementsByTagName("button")
-const screen = document.querySelector("#screen")
-let currentNumber = '';
-let previousNumber = '';
-let operator = '';
 
-buttons.array.forEach((button) => {
-    button.addEventListener('click', () => {
-        const value = button.value;
 
-        if (value >= '0' && value <= '9' || value === '.') {
-            currentNumber += value;
-            screen.innerHTML = currentNumber;
-        } else if (value === '+' || value === '-' || value === '*' || value === '/') {
-            previousNumber = currentNumber
-            currentNumber = ''
-            operator = value
-            screen.innerHTML = ''
-        } else if (value === '=') {
-            const result = calculate(previousNumber, currentNumber, operator)
-            screen.innerHTML = result
-            currentNumber = result.tostring()
-            previousNumber = ''
-            operator = ''
-        } else if (value === 'c') {
-            currentNumber = ''
-            previousNumber = ''
-            operator = ''
-            screen.innerHTML = ''
-        }
-    });
-});
+const numberBtns = document.getElementsByTagName('button')
+const display = document.querySelector("#screen")
 
-function calculate(previousNumber, currentNumber,operator) {
-    const num1 = parseFloat(previousNumber)
-    const num2 = parseFloat(currentNumber)
 
-    switch (operator) {
-        case '+':
-            return (num1 + num2);
-        case '-':
-            return (num1 - num2)
-        case '*':
-            return (num1 * num2)
-        case '/':
-            if (num2 === 0) {
-                return 'Error'
-            }
-            return num1 / num2
-        default:
-        return ''
+
+    // numberBtns.forEach((button) => {
+    //     console.log(button.textContent).style.color ='red'
+    // });
+
+    numberBtns.onclick = function() {
+        button.style.backgroundColor = 'red'
     }
-}
