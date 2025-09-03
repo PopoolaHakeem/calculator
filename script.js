@@ -38,16 +38,63 @@ brownTheme.onclick = function() {
 }
 
 
+// Calculations
+const display = document.getElementById('screen')
+let value = 0
+let tempVal = 0
+let show = ''
+
+// const calculateValue = (val) =>{
+//  value += val
+// }
+
+// function addValue(val){
+    // value += val
+    // display.value = value
+    // alert(val)
+// }
+
+const inputValue = (val) =>{
+    value = val
+    // display.value += val
+    // tempVal = val
+    display.textContent += val
+
+        // value += val
+    //     display.innerHTML += val
+    // tempVal = val
+    // display.textContent = tempVal
+    // alert(val)
+}
+
+const addSign = () => {
+    display.textContent += " + "
+
+    // display.textContent = tempVal + ' + '
+}
+const minusSign = () => {
+    display.textContent += ' - '
+    // value 
+}
+// const addSign = () => {
+//     display.innerHTML += ' + '
+// }
+
+const equalValue = ()  => {
+    display.textContent = eval(display.textContent)
+}
+
+
+
+// const equalValue = () =>{
+    // value = value ''
+    // display.value = eval(value)
+// }
+
+
+
+    // const sub
 
 const numberBtns = document.getElementsByTagName('button')
-const display = document.querySelector("#screen")
 
 
-
-    // numberBtns.forEach((button) => {
-    //     console.log(button.textContent).style.color ='red'
-    // });
-
-    numberBtns.onclick = function() {
-        button.style.backgroundColor = 'red'
-    }

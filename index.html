@@ -10,8 +10,10 @@
         body, html {
             font-family: 'League Spartan', sans-serif;;
         }
-        #screen {
-            appearance: none !important;
+       
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
         }
     </style>
 
@@ -45,30 +47,30 @@
 
         <!-- screen section -->
         <div class="bg-[#3a4764] rounded-xl mt-10 mb-7 md:bg-[#182034] text-white  " >
-            <input type="number" placeholder="0."  id="screen" class="w-full text-2xl text-end border-none rounded-xl h-23 px-5">
+            <p type="number" id="screen" class="w-full text-2xl text-end border-none rounded-xl h-23 px-5"></p>
         </div>
 
         <!-- button section -->
         <div id="pads" class="bg-gray-800 grid grid-cols-4 gap-y-4 gap-x-6 text-3xl text-[#444b5a] font-bold p-5 sm:gap-x-20 md:gap-x-10 rounded-xl ">
 
-            <button value="7" class="mee bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">7</button>
+            <button value="7" onclick="inputValue(7)" class="mee bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">7</button>
             <button value="8" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">8</button>
             <button value="9" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">9</button>
             <button id="delBtn" class="bg-[#637097] w-13 h-15 text-xl text-[#f4f4f4] cursor-pointer rounded-md  border-b-5 border-gray-600 uppercase md:w-13 hover:bg-[#636097] active:bg-[#aaa] ">Del</button>
             <button value="4" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">4</button>
             <button value="5" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">5</button>
             <button value="6" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">6</button>
-            <button value="+" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">+</button>
+            <button value="+" onclick="addSign()" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">+</button>
             <button value="1" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">1</button>
             <button value="2" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">2</button>
             <button value="3" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">3</button>
-            <button value="-" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">-</button>
+            <button value="-" onclick="minusSign()" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">-</button>
             <button value="." class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">.</button>
             <button value="0" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">0</button>
             <button value="/" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">/</button>
             <button value="*" class="bg-white w-13 h-15 cursor-pointer rounded-md  border-b-5 border-[#d3d3d3] md:w-13 hover:bg-[#ccc] active:bg-[#aaa]">x</button>
             <button id="resetBtn" class="bg-[#637097] col-span-2 h-15 text-xl text-[#f4f4f4] cursor-pointer  border-b-5 border-gray-600 uppercase rounded-md hover:bg-[#636097] active:bg-[#aaa]">reset</button>
-            <button id="equalBtn" class="bg-red-500 col-span-2 h-15 text-center text-[#f4f4f4] cursor-pointer rounded-md border-b-5 border-red-400 hover:bg-red-600 active:bg-[#aaa] ">=</button>
+            <button id="equalBtn" onclick="equalValue()" class="bg-red-500 col-span-2 h-15 text-center text-[#f4f4f4] cursor-pointer rounded-md border-b-5 border-red-400 hover:bg-red-600 active:bg-[#aaa] ">=</button>
 
         </div>
 
