@@ -86,7 +86,7 @@ const multiSign = () => {
 }
 
 const dotValue = () => {
-    display.textContent += " . "
+    display.textContent += "."
 }
 
 const resetBtn = document.getElementById("resetBtn")
