@@ -1,15 +1,4 @@
 
-// var numbers = [1,2,3,4,5,6,7,8,9,0]
-
-// function calculator(n) {
-//     for (let i = 0; i <= 9; i++) {
-//         console.log(i)
-//     }
-// }
-// calculator(n)
-
-// alert('Welcome!')
-
 var defaultTheme = document.querySelector("#default-theme")
 var lightTheme = document.querySelector("#light-theme")
 var brownTheme = document.querySelector("#brown-theme")
@@ -43,38 +32,23 @@ let value = 0
 let tempVal = 0
 let show = ''
 
-// const calculateValue = (val) =>{
-//  value += val
-// }
-
-// function addValue(val){
-    // value += val
-    // display.value = value
-    // alert(val)
-// }
-
 const inputValue = (val) => {
     value = val
-    // display.value += val
-    // tempVal = val
     display.textContent += val
-
 }
 
 const addSign = () => {
     display.textContent += " + "
-    
-
-    // display.textContent = tempVal + ' + '
 }
+
 const minusSign = () => {
     display.textContent += ' - '
-    // value 
 }
 
 const divSign = () => {
     display.textContent += " / "
 }
+
 const multiSign = () => {
     display.textContent += " * "
 }
@@ -91,26 +65,9 @@ resetBtn.addEventListener('click', () => {
 const delBtn = document.getElementById("delBtn")
 delBtn.addEventListener('click', () => {
     display.textContent = display.textContent.slice(0, -1)
-})
-
-
-
+});
 
 const equalValue = ()  => {
     display.textContent = eval(display.textContent)
 }
  
-
-
-// const equalValue = () =>{
-    // value = value ''
-    // display.value = eval(value)
-// }
-
-
-
-    // const sub
-
-// const numberBtns = document.getElementsByTagName('button')
-
-
