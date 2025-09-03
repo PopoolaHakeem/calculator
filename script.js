@@ -18,7 +18,7 @@ var body = document.body
 
 defaultTheme.onclick = function() {
     body.style.backgroundColor = "#637097"
-    document.querySelector("#header h3").style.color = "#fff"
+    document.querySelector("#header").style.color = "#fff"
     body.style.transition = "all 0.5s ease-in-out"  
 }
 
