@@ -54,7 +54,7 @@ let show = ''
     // alert(val)
 // }
 
-const inputValue = (val) =>{
+const inputValue = (val) => {
     value = val
     // display.value += val
     // tempVal = val
@@ -69,6 +69,7 @@ const inputValue = (val) =>{
 
 const addSign = () => {
     display.textContent += " + "
+    
 
     // display.textContent = tempVal + ' + '
 }
@@ -76,6 +77,26 @@ const minusSign = () => {
     display.textContent += ' - '
     // value 
 }
+
+const divSign = () => {
+    display.textContent += " / "
+}
+const multiSign = () => {
+    display.textContent += " * "
+}
+
+// const resetBtn = document.getElementById("resetBtn")
+
+// resetBtn.addEventListener('click', () => {
+//     display.textContent = " "
+// })
+
+const resetValue = () => {
+    display.textContent = eval(display.textContent)
+}
+
+
+
 // const addSign = () => {
 //     display.innerHTML += ' + '
 // }
@@ -95,6 +116,6 @@ const equalValue = ()  => {
 
     // const sub
 
-const numberBtns = document.getElementsByTagName('button')
+// const numberBtns = document.getElementsByTagName('button')
 
 
