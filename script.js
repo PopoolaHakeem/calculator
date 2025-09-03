@@ -92,8 +92,12 @@ const dotValue = () => {
 const resetBtn = document.getElementById("resetBtn")
 resetBtn.addEventListener('click', () => {
     display.textContent = " "
-})
+});
 
+const delBtn = document.getElementById("delBtn")
+delBtn.addEventListener('click', () => {
+    display.textContent = display.textContent.slice(0, -1)
+})
 
 
 // const addSign = () => {
