@@ -85,6 +85,10 @@ const multiSign = () => {
     display.textContent += " * "
 }
 
+const dotValue = () => {
+    display.textContent += " . "
+}
+
 const resetBtn = document.getElementById("resetBtn")
 resetBtn.addEventListener('click', () => {
     display.textContent = " "
@@ -99,7 +103,7 @@ resetBtn.addEventListener('click', () => {
 const equalValue = ()  => {
     display.textContent = eval(display.textContent)
 }
-
+ 
 
 
 // const equalValue = () =>{
