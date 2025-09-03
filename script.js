@@ -85,15 +85,10 @@ const multiSign = () => {
     display.textContent += " * "
 }
 
-// const resetBtn = document.getElementById("resetBtn")
-
-// resetBtn.addEventListener('click', () => {
-//     display.textContent = " "
-// })
-
-const resetValue = () => {
-    display.textContent = eval(display.textContent)
-}
+const resetBtn = document.getElementById("resetBtn")
+resetBtn.addEventListener('click', () => {
+    display.textContent = " "
+})
 
 
 
