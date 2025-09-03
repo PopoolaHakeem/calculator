@@ -13,13 +13,12 @@
 var defaultTheme = document.querySelector("#default-theme")
 var lightTheme = document.querySelector("#light-theme")
 var brownTheme = document.querySelector("#brown-theme")
-// var numberBtn = document.querySelector("#pads")
 var body = document.body
 
 
 defaultTheme.onclick = function() {
     body.style.backgroundColor = "#637097"
-    document.querySelector("#header").style.color = "#fff"
+    document.querySelector("#header h3").style.color = "#fff"
     body.style.transition = "all 0.5s ease-in-out"  
 }
 
