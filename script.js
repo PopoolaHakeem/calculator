@@ -60,11 +60,6 @@ const inputValue = (val) => {
     // tempVal = val
     display.textContent += val
 
-        // value += val
-    //     display.innerHTML += val
-    // tempVal = val
-    // display.textContent = tempVal
-    // alert(val)
 }
 
 const addSign = () => {
@@ -100,9 +95,7 @@ delBtn.addEventListener('click', () => {
 })
 
 
-// const addSign = () => {
-//     display.innerHTML += ' + '
-// }
+
 
 const equalValue = ()  => {
     display.textContent = eval(display.textContent)
