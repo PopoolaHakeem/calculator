@@ -71,3 +71,12 @@ const equalValue = ()  => {
     display.textContent = eval(display.textContent)
 }
  
+
+function screen (val) {
+    const maxLength = 5;
+    if (val.length > maxLength) {
+        display.textContent = val.substring(0, maxLength) + '...'
+    } else {
+        display.textContent = val
+    }
+}
