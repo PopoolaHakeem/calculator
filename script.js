@@ -12,7 +12,7 @@ defaultTheme.onclick = function() {
 }
 
 lightTheme.onclick = function() {
-    body.style.backgroundColor = "#fffdd0"
+    body.style.backgroundColor = "#4285f4"
     document.querySelector("#header").style.color = "#373433"
     body.style.color = "#333"
     body.style.transition = "all 0.5s ease-in-out"  
