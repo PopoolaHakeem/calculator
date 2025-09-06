@@ -72,8 +72,11 @@ const equalValue = ()  => {
 }
  
 
+
+// screen length 
+const maxLength = 5;
+
 function screen (val) {
-    const maxLength = 5;
     if (val.length > maxLength) {
         display.textContent = val.substring(0, maxLength) + '...'
     } else {
