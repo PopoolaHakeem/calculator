@@ -75,14 +75,8 @@ const equalValue = ()  => {
 // screen length 
 const maxLength = 5;
 
-function screen (val) {
-    if (val.length > maxLength) {
-        display.textContent = val.substring(0, maxLength) + '...'
-    } else {
-        display.textContent = val 
+display.addEventListener('input', () => {
+    if (display.val.length > maxLength) {
+        display.textContent += display.textContent.slice(0, 5);
     }
-}
-
-// const display = document.getElementById('screen')
-
-// function screen ()
+})
