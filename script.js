@@ -79,6 +79,10 @@ function screen (val) {
     if (val.length > maxLength) {
         display.textContent = val.substring(0, maxLength) + '...'
     } else {
-        display.textContent = val
+        display.textContent = val 
     }
 }
+
+// const display = document.getElementById('screen')
+
+// function screen ()
