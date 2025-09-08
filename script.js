@@ -1,7 +1,7 @@
 
 var defaultTheme = document.querySelector("#default-theme")
 var lightTheme = document.querySelector("#light-theme")
-var brownTheme = document.querySelector("#brown-theme")
+var darkTheme = document.querySelector("#dark-theme")
 var body = document.body
 
 
@@ -12,13 +12,13 @@ defaultTheme.onclick = function() {
 }
 
 lightTheme.onclick = function() {
-    body.style.backgroundColor = "#4285f4"
+    body.style.backgroundColor = "#fffdd0"
     document.querySelector("#header").style.color = "#373433"
     body.style.color = "#333"
     body.style.transition = "all 0.5s ease-in-out"  
 }
 
-brownTheme.onclick = function() {
+darkTheme.onclick = function() {
     body.style.backgroundColor = "#161616"
     document.querySelector("#header").style.color = "#f7f7f7ff"
     body.style.color = "white"
@@ -71,7 +71,6 @@ const equalValue = ()  => {
     display.textContent = eval(display.textContent)
 }
  
-
 
 // screen length 
 const maxLength = 5;
