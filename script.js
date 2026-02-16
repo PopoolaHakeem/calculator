@@ -77,6 +77,6 @@ const maxLength = 5;
 
 display.addEventListener('input', () => {
     if (display.val.length > maxLength) {
-        display.textContent += display.textContent.slice(0, 5);
+        display.textContent = display.textContent.slice(0, 5);
     }
-})
+});
